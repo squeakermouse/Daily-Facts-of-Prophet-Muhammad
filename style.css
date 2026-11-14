@@ -1,0 +1,49 @@
+*{box-sizing:border-box}
+:root{--gold:#d9b574;--gold2:#f0d6a4;--cream:#f3eadc;--muted:#c6bdaf;--night:#07121a}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:var(--night);color:var(--cream);font-family:"DM Sans",sans-serif}
+.scene{position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(3,11,17,.28),rgba(3,11,17,.25) 42%,rgba(3,11,17,.62)),url("night-sky.jpg") center/cover no-repeat}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 32%,transparent 0,rgba(2,8,13,.18) 65%,rgba(2,8,13,.45) 100%)}
+.navbar{height:88px;padding:0 clamp(22px,5vw,78px);display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid rgba(217,181,116,.55);background:rgba(3,11,17,.65);backdrop-filter:blur(9px)}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--cream);min-width:270px}
+.mosque-icon{font-size:34px;color:var(--gold);transform:rotate(180deg)}
+.brand b{display:block;font:600 23px "Cormorant Garamond",serif;white-space:nowrap}
+.brand small{display:block;color:var(--gold);font:16px "Cormorant Garamond",serif}
+nav{display:flex;align-items:center;gap:clamp(20px,4.5vw,70px)}
+nav a{color:#e9dfcf;text-decoration:none;font:500 18px "Cormorant Garamond",serif;display:flex;gap:12px;align-items:center;padding:13px 4px}
+nav a:hover,nav a.selected{color:var(--gold2)}
+nav a.selected{border-bottom:2px solid var(--gold)}
+.date-pill{border:1px solid var(--gold);border-radius:28px;padding:12px 19px;color:var(--gold2);font:15px "Cormorant Garamond",serif;white-space:nowrap}
+main{width:min(1200px,calc(100% - 42px));margin:auto}
+.hero{text-align:center;padding:48px 10px 34px}
+.divider-ornament{display:flex;justify-content:center;align-items:center;gap:20px;color:var(--gold);font-size:25px}
+.divider-ornament i{display:block;width:100px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.divider-ornament i:last-child{transform:rotate(180deg)}
+.eyebrow{color:var(--gold2);font:italic 19px "Cormorant Garamond",serif;letter-spacing:2px;margin:10px 0 17px}
+h1{font:400 clamp(48px,6vw,82px)/.9 "Cormorant Garamond",serif;margin:0;color:#f4eadc}
+h1 strong{font-weight:700;color:var(--gold2)}
+.sallallahu{font:36px "Amiri",serif;white-space:nowrap}
+.fact-panel{position:relative;min-height:260px;border:1.5px solid var(--gold);border-radius:24px;background:linear-gradient(100deg,rgba(6,15,21,.95),rgba(9,16,20,.86) 65%,rgba(7,13,17,.73));box-shadow:0 14px 48px #0008;padding:63px 8% 36px;display:flex;align-items:center;justify-content:center;text-align:center}
+.fact-label{position:absolute;top:0;left:50%;transform:translate(-50%,-1px);border:2px solid var(--gold);border-radius:28px;background:#101a20;padding:9px 27px;color:var(--gold2);font:600 20px "Cormorant Garamond",serif;white-space:nowrap}
+.calligraphy{position:absolute;left:6%;top:50%;transform:translateY(-50%);font:94px "Amiri",serif;color:var(--gold);opacity:.95}
+.fact-content{max-width:790px}
+.category{font-size:10px;letter-spacing:3px;color:var(--gold);margin:0 0 8px}
+.fact-content h2{font:600 clamp(25px,3vw,38px)/1.12 "Cormorant Garamond",serif;margin:0 0 13px;color:#f4eee5}
+.quote{font:italic 22px "Cormorant Garamond",serif;margin:0;color:#e8dfd3}
+.reference{font:italic 17px "Cormorant Garamond",serif;color:var(--gold2);margin:4px 0 0}
+.panel-ornament{position:absolute;bottom:-13px;left:50%;transform:translateX(-50%);color:var(--gold);font-size:17px;white-space:nowrap;background:#09141b;padding:0 10px}
+.below-panel{text-align:center;padding:26px 0 22px}
+.tomorrow{border:2px solid var(--gold);border-radius:30px;padding:13px 28px;background:rgba(5,14,20,.8);color:var(--gold2);font:600 18px "Cormorant Garamond",serif;cursor:pointer;box-shadow:0 4px 18px #0006;transition:.2s}
+.tomorrow:hover{background:var(--gold);color:#101820}
+.counter{font-size:10px;color:#c5b99f;letter-spacing:1px;margin:9px 0 0}
+.verse{border-top:1px solid rgba(217,181,116,.55);border-bottom:1px solid rgba(217,181,116,.22);min-height:90px;display:grid;grid-template-columns:80px 1fr 260px;align-items:center;gap:22px;padding:13px 28px;background:rgba(4,13,19,.78);text-align:center}
+.book-icon{font-size:37px;color:var(--gold);border-right:1px solid var(--gold);padding-right:22px}
+.verse blockquote{font:italic 22px "Cormorant Garamond",serif;margin:0 0 2px}
+.verse p{font:15px "Cormorant Garamond",serif;color:var(--gold2);margin:0}
+.dua{font:italic 16px "Cormorant Garamond",serif;color:#e5d8c4}
+.learn{text-align:center;padding:40px 15px 45px;max-width:700px;margin:auto}
+.learn h2{font:600 27px "Cormorant Garamond",serif;color:var(--gold2);margin:0 0 8px}
+.learn p{font-size:13px;line-height:1.8;color:var(--muted)}
+footer{text-align:center;border-top:1px solid rgba(217,181,116,.3);padding:18px;color:#c4b8a4;font:italic 15px "Cormorant Garamond",serif}
+@media(max-width:850px){.navbar{height:auto;min-height:80px;flex-wrap:wrap;padding:13px 20px;justify-content:center}.brand{min-width:0;margin-right:auto}.brand b{font-size:19px}nav{order:3;width:100%;justify-content:center;gap:32px}nav a{font-size:16px}.date-pill{font-size:12px}.hero{padding-top:42px}.fact-panel{padding:62px 25px 35px}.calligraphy{position:static;transform:none;font-size:48px;margin-right:15px}.fact-content{flex:1}.verse{grid-template-columns:50px 1fr}.dua{display:none}}
+@media(max-width:560px){main{width:calc(100% - 24px)}.navbar{gap:12px}.brand b{font-size:17px}.brand small{font-size:13px}.mosque-icon{font-size:25px}.date-pill{padding:8px 10px}nav{gap:22px}nav a{gap:6px;font-size:14px}.hero{padding:38px 0 25px}.eyebrow{font-size:14px}h1{font-size:45px}.sallallahu{font-size:24px}.divider-ornament i{width:55px}.fact-panel{display:block;padding:56px 18px 32px;min-height:0}.calligraphy{display:none}.fact-content h2{font-size:28px}.quote{font-size:18px}.reference{font-size:15px}.tomorrow{font-size:16px;padding:11px 20px}.verse{grid-template-columns:36px 1fr;gap:10px;padding:12px 7px}.book-icon{font-size:27px;padding-right:9px}.verse blockquote{font-size:18px}.verse p{font-size:13px}}

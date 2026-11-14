@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07121a">
+  <meta name="description" content="Daily facts and reminders about the life and teachings of Prophet Muhammad ﷺ.">
+  <title>Prophet Muhammad ﷺ | Daily Facts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene"></div>
+  <header class="navbar">
+    <a class="brand" href="#home"><span class="mosque-icon">♧</span><span><b>Prophet Muhammad ﷺ</b><small>Daily Facts</small></span></a>
+    <nav aria-label="Main navigation"><a class="selected" href="#home">◆ <span>Home</span></a><a href="#about">ⓘ <span>About</span></a><a href="#learn">♥ <span>Learn More</span></a></nav>
+    <div class="date-pill">▦ <span id="today-date"></span></div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="divider-ornament"><i></i><span>۞</span><i></i></div>
+      <p class="eyebrow">LEARN. REFLECT. BE INSPIRED.</p>
+      <h1>Daily Fact of<br><strong>Prophet Muhammad <span class="sallallahu">ﷺ</span></strong></h1>
+    </section>
+
+    <section class="fact-panel" aria-live="polite">
+      <div class="fact-label">✦ &nbsp; Today’s Fact &nbsp; ✦</div>
+      <div class="calligraphy" aria-hidden="true">ﷺ</div>
+      <div class="fact-content">
+        <p class="category" id="category">HIS CHARACTER</p>
+        <h2 id="fact-title">The Prophet Muhammad ﷺ was known for his kindness, even to those who opposed him.</h2>
+        <p class="quote" id="fact-text">“The Messenger of Allah ﷺ was the most generous of people in goodness.”</p>
+        <p class="reference" id="fact-source">— Sahih al-Bukhari</p>
+      </div>
+      <div class="panel-ornament">⌁ ─────── ♧ ─────── ⌁</div>
+    </section>
+
+    <div class="below-panel">
+      <button id="next-fact" class="tomorrow">⟳ &nbsp; Discover Another Fact</button>
+      <p class="counter" id="counter"></p>
+    </div>
+
+    <section class="verse" id="about">
+      <div class="book-icon">▤</div>
+      <div><blockquote>“Indeed, in the Messenger of Allah you have an excellent example.”</blockquote><p>— Qur’an 33:21</p></div>
+      <div class="dua">♥ May we all follow his example. ♡</div>
+    </section>
+
+    <section class="learn" id="learn">
+      <h2>Learn. Reflect. Share.</h2>
+      <p>Explore carefully sourced reminders about the Seerah, character, and teachings of Prophet Muhammad ﷺ.</p>
+    </section>
+  </main>
+  <footer>☾ &nbsp; A daily reminder to learn and grow &nbsp; ✦</footer>
+  <script src="script.js"></script>
+</body>
+</html>
